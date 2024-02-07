@@ -1,4 +1,6 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
+import 'location.dart';
 
 class Report extends StatefulWidget {
   const Report({super.key});
@@ -8,6 +10,12 @@ class Report extends StatefulWidget {
 }
 
 class _ReportState extends State<Report> {
+  @override
+  void initState() {
+    getCurrentLocation().then((value) => print(value));
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(

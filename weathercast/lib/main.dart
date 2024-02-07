@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'Report.dart';
+import 'report.dart';
 
-void main(List<String> args) {
+void main() {
   runApp(const MyApp());
 }
 
